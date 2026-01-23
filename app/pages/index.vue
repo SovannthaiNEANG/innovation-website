@@ -50,7 +50,7 @@
 <style scoped>
 .hero {
   min-height: 100vh;
-  background: radial-gradient(circle at right, #5b3b9a, #0b0b1a);
+  background: radial-gradient(circle at bottom right, #502D9B, d#000312);
   color: white;
   display: flex;
   align-items: center;
