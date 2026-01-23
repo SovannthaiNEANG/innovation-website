@@ -41,7 +41,6 @@
         <div class="circle ring-3"></div>
         <div class="circle ring-4"></div>
       </v-col>
-
       </v-row>
     </v-container>
   </div>
@@ -80,7 +79,7 @@
 .circle-wrapper {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .circle {
   position: absolute;
