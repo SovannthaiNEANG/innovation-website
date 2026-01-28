@@ -1,58 +1,110 @@
 <template>
-  <div class="hero">
-    <v-container>
-      <v-row align="center">
-        <!-- LEFT CONTENT -->
-        <v-col cols="12" md="6">
-          <h1 class="hero-title">
-            Innovation at Every Layer.
-          </h1>
+  <!-- Fixed Background -->
+  <div class="fixed-background"></div>
+  
+  <!-- Scrollable Content -->
+  <div class="snap-container">
+    <div class="hero snap-section">
+      <v-container>
+        <v-row align="center">
+          <!-- LEFT CONTENT -->
+          <v-col cols="12" md="6">
+            <h1 class="hero-title">
+              Innovation at Every Layer.
+            </h1>
 
-          <p class="hero-desc">
-            Innovation should be existed in every part of the business
-            to make it grow effectively and efficiently.
-          </p>
+            <p class="hero-desc">
+              Innovation should be existed in every part of the business
+              to make it grow effectively and efficiently.
+            </p>
 
-          <v-btn rounded class="text-none" size="large" color="white" variant="flat">
-            View Our Projects
-          </v-btn>
+            <v-btn rounded class="text-none" size="large" color="white" variant="flat">
+              View Our Projects
+            </v-btn>
 
-          <!-- STATS -->
-          <v-row class="mt-10 stats">
-            <v-col cols="4">
-              <h2>10</h2>
-              <span>Total Projects</span>
-            </v-col>
-            <v-col cols="4">
-              <h2>8</h2>
-              <span>Contributors</span>
-            </v-col>
-            <v-col cols="4">
-              <h2>50%</h2>
-              <span>Milestone Reached</span>
-            </v-col>
-          </v-row>
+            <!-- STATS -->
+            <v-row class="mt-10 stats">
+              <v-col cols="4">
+                <h2>10</h2>
+                <span>Total Projects</span>
+              </v-col>
+              <v-col cols="4">
+                <h2>8</h2>
+                <span>Contributors</span>
+              </v-col>
+              <v-col cols="4">
+                <h2>50%</h2>
+                <span>Milestone Reached</span>
+              </v-col>
+            </v-row>
+          </v-col>
+
+          <!-- RIGHT CIRCLES -->
+        <v-col cols="12" md="6" class="circle-wrapper">
+          <div class="circle ring-1"></div>
+          <div class="circle ring-2"></div>
+          <div class="circle ring-3"></div>
+          <div class="circle ring-4"></div>
         </v-col>
-
-        <!-- RIGHT CIRCLES -->
-      <v-col cols="12" md="6" class="circle-wrapper">
-        <div class="circle ring-1"></div>
-        <div class="circle ring-2"></div>
-        <div class="circle ring-3"></div>
-        <div class="circle ring-4"></div>
-      </v-col>
-      </v-row>
-    </v-container>
+        </v-row>
+      </v-container>
+    </div>
+    <div class="content-section snap-section">
+      <Blogs />
+    </div>
+    <!-- <div class="content-section snap-section">
+      <Blogs />
+    </div>
+    <div class="content-section snap-section">
+      <Blogs />
+    </div>
+    <div class="content-section snap-section">
+      <Blogs />
+    </div>
+    <div class="content-section snap-section">
+      <Blogs />
+    </div> -->
   </div>
 </template>
 
 <style scoped>
-.hero {
-  min-height: 100vh;
+/* Fixed Background Layer */
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
   background: radial-gradient(circle at bottom right, #502D9B, #000312);
+  z-index: 0;
+}
+
+/* Scrollable Container */
+.snap-container {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.hero {
   color: white;
   display: flex;
   align-items: center;
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
