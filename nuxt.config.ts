@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   // ssr: false,
 
-  // devServer: {
-  //   port: 80,
-  //   host: '127.0.0.1',
-  // },
-
   build: {
     transpile: ['vuetify'],
   },
@@ -29,9 +24,6 @@ export default defineNuxtConfig({
       template: {
         transformAssetUrls,
       },
-    },
-    server: {
-      allowedHosts: ['.ngrok-free.app', '.ngrok.io'],
     },
   },
 
