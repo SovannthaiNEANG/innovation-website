@@ -3,47 +3,36 @@
     <v-row align="center">
       <!-- LEFT CONTENT -->
       <v-col cols="12" md="6">
-        <h1 class="hero-title text-white">
-          Lastest Blogs.
-        </h1>
-
-        <p class="hero-desc text-white ">
-          What's happening inside development worlds.
-        </p>
-
-        <v-btn rounded class="text-none" size="large" color="white" variant="flat">
-          View Our Blogs
-        </v-btn>
-
+        <MainTitle title="Latest Blogs." description="What's happening inside development worlds." btnText="View Our Blogs"></MainTitle>
       </v-col>
 
       <!-- RIGHT CIRCLES -->
-    <v-col cols="12" md="6" >
-      <v-row>
-        <v-col cols="6">
-          <div class="carousel-container-up">
-            <div class="mb-4 carousel-up" justify="center">
-              <div class="inner">
-                <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`up-${i}`" />
+      <v-col cols="12" md="6" >
+        <v-row class="mt-4">
+          <v-col cols="6">
+            <div class="carousel-container-up">
+              <div class="mb-4 carousel-up" justify="center">
+                <div class="inner">
+                  <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`up-${i}`" />
+                </div>
               </div>
             </div>
-          </div>
-        </v-col>
-        <v-col cols="6">
-          <div class="carousel-container">
-            <div class=" carousel" justify="center">
-              <div class="inner">
-                <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`down-${i}`" />
+          </v-col>
+          <v-col cols="6">
+            <div class="carousel-container">
+              <div class=" carousel" justify="center">
+                <div class="inner">
+                  <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`down-${i}`" />
+                </div>
               </div>
             </div>
-          </div>
-        </v-col>
-      </v-row>
-    </v-col>
+          </v-col>
+        </v-row>
+      </v-col>
     </v-row>
   </ContainerWrapper>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 
   /*For Container Height*/
   .carousel-container-up {
@@ -55,6 +44,11 @@
   /*Control Animation Speed*/
   .carousel-up {
     animation: scrollUp 50s linear infinite;
+  }
+
+  /*Pause Animation on Hover*/
+  .carousel-up:hover {
+    animation-play-state: paused;
   }
 
   /*It Creates The Animation*/
@@ -105,6 +99,11 @@
   animation: scrollDown 50s linear infinite;
 }
 
+/*Pause Animation on Hover*/
+.carousel:hover {
+  animation-play-state: paused;
+}
+
 /*It Creates The Animation*/
 @keyframes scrollDown {
   0% {
@@ -144,33 +143,13 @@
 /* Inner wrapper for duplicated items to layout vertically */
 .carousel .inner,
 .carousel-up .inner {
-  // display: flex;
+  display: flex;
   flex-direction: column;
 }
 
 .carousel .inner > *,
 .carousel-up .inner > * {
   flex-shrink: 0;
-}
-
-.hero-title {
-  font-size: 42px;
-  font-weight: 700;
-}
-
-.hero-desc {
-  max-width: 420px;
-  margin: 16px 0 32px;
-  opacity: 0.85;
-}
-
-.stats h2 {
-  font-size: 28px;
-}
-
-.stats span {
-  font-size: 14px;
-  opacity: 0.8;
 }
 
 </style>

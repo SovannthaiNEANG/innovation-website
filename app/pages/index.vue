@@ -5,7 +5,6 @@
 <template>
   <!-- Fixed Background -->
   <div class="fixed-background"></div>
-  
   <!-- Scrollable Content -->
   <div class="snap-container">
     <div class="hero snap-section">
@@ -13,32 +12,20 @@
         <v-row align="center">
           <!-- LEFT CONTENT -->
           <v-col cols="12" md="6">
-            <h1 class="hero-title">
-              Innovation at Every Layer.
-            </h1>
-
-            <p class="hero-desc">
-              Innovation should be existed in every part of the business
-              to make it grow effectively and efficiently.
-            </p>
-
-            <v-btn rounded class="text-none" size="large" color="white" variant="flat">
-              View Our Projects
-            </v-btn>
-
+            <MainTitle title="Innovation at Every Layer." description="Innovation should be existed in every part of the business to make it grow effectively and efficiently." btnText="View Our Projects"></MainTitle>
             <!-- STATS -->
             <v-row class="mt-10 stats">
               <v-col cols="4">
-                <h2>10</h2>
-                <span>Total Projects</span>
+                <p class="text-xxl">10</p>
+                <span class="text-sm">Total Projects</span>
               </v-col>
               <v-col cols="4">
-                <h2>8</h2>
-                <span>Contributors</span>
+                <p class="text-xxl">8</p>
+                <span class="text-sm">Contributors</span>
               </v-col>
               <v-col cols="4">
-                <h2>50%</h2>
-                <span>Milestone Reached</span>
+                <p class="text-xxl">50%</p>
+                <span class="text-sm">Milestone Reached</span>
               </v-col>
             </v-row>
           </v-col>

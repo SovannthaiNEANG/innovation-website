@@ -1,7 +1,6 @@
 <template>
   <v-card
     class="mx-auto"
-    max-width="344"
   >
     <v-img
       height="200px"
@@ -21,7 +20,4 @@
   </v-card>
 </template>
 <script setup>
-  import { ref } from 'vue'
-
-  const show = ref(false)
 </script>

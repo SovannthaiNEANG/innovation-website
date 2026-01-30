@@ -2,24 +2,22 @@
   <v-app-bar
     color="transparent"
     flat
-    class="app-header"
+    class="app-header py-6"
   >
     <ContainerWrapper>
       <div class="d-flex align-center">
         <!-- Logo -->
         <div class="logo d-flex align-center">
           <img src="/img/logo.png" alt="">
-          <span class="ml-2 font-weight-bold">Innovation</span>
+          <span class="ml-2 font-weight-bold text-lg">Innovation</span>
         </div>
-  
         <v-spacer />
-  
         <!-- Desktop -->
         <div class="d-none d-md-flex">
-          <v-btn v-for="item in menus" class="text-none" :key="item" variant="text" color="white">
+          <v-btn v-for="item in menus" class="text-none text-sm" :key="item" variant="text" color="white">
             {{ item }}
           </v-btn>
-          <v-btn class="ml-4 text-none" rounded color="white" variant="flat">
+          <v-btn class="ml-4 text-none text-sm" rounded color="white" variant="flat">
             Sign In
           </v-btn>
         </div>
