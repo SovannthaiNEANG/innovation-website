@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <!-- Fixed Background -->
   <div class="fixed-background"></div>
@@ -14,18 +10,18 @@
           <v-col cols="12" md="6">
             <MainTitle title="Innovation at Every Layer." description="Innovation should be existed in every part of the business to make it grow effectively and efficiently." btnText="View Our Projects"></MainTitle>
             <!-- STATS -->
-            <v-row class="mt-10 stats">
+            <v-row class="mt-10">
               <v-col cols="4">
                 <p class="text-xxl">10</p>
-                <span class="text-sm">Total Projects</span>
+                <span class="text-md text-subtitle">Total Projects</span>
               </v-col>
               <v-col cols="4">
                 <p class="text-xxl">8</p>
-                <span class="text-sm">Contributors</span>
+                <span class="text-md text-subtitle">Contributors</span>
               </v-col>
               <v-col cols="4">
                 <p class="text-xxl">50%</p>
-                <span class="text-sm">Milestone Reached</span>
+                <span class="text-md text-subtitle">Milestone Reached</span>
               </v-col>
             </v-row>
           </v-col>
@@ -57,7 +53,9 @@
     </div> -->
   </div>
 </template>
+<script setup lang="ts">
 
+</script>
 <style scoped>
 /* Fixed Background Layer */
 .fixed-background {
@@ -68,6 +66,9 @@
   height: 100vh;
   background: radial-gradient(circle at bottom right, #502D9B, #000312);
   z-index: 0;
+}
+.text-xxl {
+  font-weight: 500;
 }
 
 /* Scrollable Container */

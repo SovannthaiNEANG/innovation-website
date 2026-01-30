@@ -3,11 +3,11 @@
     {{ title }}
   </h1>
 
-  <p class="hero-desc text-sm text-white">
+  <p class="hero-desc text-md text-white">
     {{ description }}
   </p>
 
-  <v-btn rounded class="text-none text-sm" size="large" color="white" variant="flat">
+  <v-btn rounded class="text-none text-md" size="large" color="white" variant="flat">
     {{ btnText }}
   </v-btn>
 </template>
@@ -39,7 +39,7 @@ export default {
   .hero-desc {
     max-width: 420px;
     margin: 16px 0 32px;
-    opacity: 0.85;
+    opacity: 0.7;
   }
 
   .stats h2 {

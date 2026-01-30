@@ -9,7 +9,10 @@
         <!-- Logo -->
         <div class="logo d-flex align-center">
           <img src="/img/logo.png" alt="">
-          <span class="ml-2 font-weight-bold text-lg">Innovation</span>
+          <div class="d-flex flex-column ml-2">
+            <span class="ml-2 font-weight-bold text-lg">Innovation</span>
+            <span class="ml-2 text-white text-xs text-subtitle">Think outside the box</span>
+          </div>
         </div>
         <v-spacer />
         <!-- Desktop -->
