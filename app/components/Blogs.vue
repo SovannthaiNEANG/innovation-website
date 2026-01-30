@@ -1,47 +1,47 @@
 <template>
-  <v-container>
-      <v-row align="center">
-        <!-- LEFT CONTENT -->
-        <v-col cols="12" md="6">
-          <h1 class="hero-title text-white">
-            Lastest Blogs.
-          </h1>
+  <ContainerWrapper>
+    <v-row align="center">
+      <!-- LEFT CONTENT -->
+      <v-col cols="12" md="6">
+        <h1 class="hero-title text-white">
+          Lastest Blogs.
+        </h1>
 
-          <p class="hero-desc text-white ">
-            What's happening inside development worlds.
-          </p>
+        <p class="hero-desc text-white ">
+          What's happening inside development worlds.
+        </p>
 
-          <v-btn rounded class="text-none" size="large" color="white" variant="flat">
-            View Our Blogs
-          </v-btn>
+        <v-btn rounded class="text-none" size="large" color="white" variant="flat">
+          View Our Blogs
+        </v-btn>
 
-        </v-col>
-
-        <!-- RIGHT CIRCLES -->
-      <v-col cols="12" md="6" >
-        <v-row>
-          <v-col cols="6">
-            <div class="carousel-container-up">
-              <div class="mb-4 carousel-up" justify="center">
-                <div class="inner">
-                  <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`up-${i}`" />
-                </div>
-              </div>
-            </div>
-          </v-col>
-          <v-col cols="6">
-            <div class="carousel-container">
-              <div class=" carousel" justify="center">
-                <div class="inner">
-                  <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`down-${i}`" />
-                </div>
-              </div>
-            </div>
-          </v-col>
-        </v-row>
       </v-col>
+
+      <!-- RIGHT CIRCLES -->
+    <v-col cols="12" md="6" >
+      <v-row>
+        <v-col cols="6">
+          <div class="carousel-container-up">
+            <div class="mb-4 carousel-up" justify="center">
+              <div class="inner">
+                <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`up-${i}`" />
+              </div>
+            </div>
+          </div>
+        </v-col>
+        <v-col cols="6">
+          <div class="carousel-container">
+            <div class=" carousel" justify="center">
+              <div class="inner">
+                <Card class="mt-4" v-for="(value, i) in Array(10)" :key="`down-${i}`" />
+              </div>
+            </div>
+          </div>
+        </v-col>
       </v-row>
-    </v-container>
+    </v-col>
+    </v-row>
+  </ContainerWrapper>
 </template>
 <style lang="scss">
 

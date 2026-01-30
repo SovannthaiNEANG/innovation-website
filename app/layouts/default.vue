@@ -1,6 +1,6 @@
 <template>
   <AppHeader />
-  <div class="background-color-page">
+  <div>
     <slot />
   </div>
   <AppFooter />

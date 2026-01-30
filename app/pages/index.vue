@@ -1,3 +1,7 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
   <!-- Fixed Background -->
   <div class="fixed-background"></div>
@@ -5,7 +9,7 @@
   <!-- Scrollable Content -->
   <div class="snap-container">
     <div class="hero snap-section">
-      <v-container>
+      <ContainerWrapper>
         <v-row align="center">
           <!-- LEFT CONTENT -->
           <v-col cols="12" md="6">
@@ -47,7 +51,7 @@
           <div class="circle ring-4"></div>
         </v-col>
         </v-row>
-      </v-container>
+      </ContainerWrapper>
     </div>
     <div class="content-section snap-section">
       <Blogs />
