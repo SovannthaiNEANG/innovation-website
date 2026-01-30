@@ -64,18 +64,21 @@
   /*Responsive Adjustments*/
   @media (max-width: 1024px){
     .carousel-container {
-      height: 100vh;
-      }
+      height: 68vh;
+    }
+    .carousel-container-up {
+      height: 68vh;
+    }
   }
 
   @media (max-width: 767px){
       
-    .carousel{
+    .carousel {
       animation: scrollUp 8s linear infinite;
     }    
 
     .carousel-container {
-        height: 100vh!important;
+        height: 70vh !important;
     }
         
     @keyframes scrollUp {
@@ -88,7 +91,7 @@
     }
   }
 /*For Container Height*/
-.carousel-container{
+.carousel-container {
   height: 83vh;
   overflow: hidden;
   position: relative;
@@ -117,7 +120,7 @@
 /*Responsive Adjustments*/
 @media (max-width: 1024px){
   .carousel-container {
-    height: 100vh;
+    height: 68vh;
   }
 }
 
@@ -127,7 +130,7 @@
   }    
 
   .carousel-container {
-    height: 100vh!important;
+    height: 70vh !important;
   }
 
   @keyframes scrollDown {
