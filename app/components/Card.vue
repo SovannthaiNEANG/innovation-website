@@ -5,41 +5,19 @@
   >
     <v-img
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      src="/img/cardImg.jpg"
       cover
     ></v-img>
 
-    <v-card-title>
+    <v-card-title class="text-md pb-1">
       Top western road trips
     </v-card-title>
-
-    <v-card-subtitle>
-      1,000 miles of wonder
+    <v-card-subtitle class="py-0">
+      April 20, 2025
     </v-card-subtitle>
-
-    <v-card-actions>
-      <v-btn
-        color="orange-lighten-2"
-        text="Explore"
-      ></v-btn>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
-        @click="show = !show"
-      ></v-btn>
-    </v-card-actions>
-
-    <v-expand-transition>
-      <div v-show="show">
-        <v-divider></v-divider>
-
-        <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
-        </v-card-text>
-      </div>
-    </v-expand-transition>
+    <v-card-text class="pt-1">
+      Discover the most scenic and unforgettable road trips across the western regions, from coastal drives to mountain adventures.
+    </v-card-text>
   </v-card>
 </template>
 <script setup>

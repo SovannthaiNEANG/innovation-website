@@ -17,6 +17,14 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
+    [
+      "@nuxtjs/google-fonts",
+      {
+        families: {
+          "IBM+Plex+Sans": [400, 500, 600, 700],
+        },
+      },
+    ],
   ],
 
   vite: {
@@ -26,6 +34,5 @@ export default defineNuxtConfig({
       },
     },
   },
-
   css: ['vuetify/styles', '~/assets/styles/main.scss'],
 })
