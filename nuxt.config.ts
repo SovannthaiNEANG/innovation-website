@@ -35,4 +35,14 @@ export default defineNuxtConfig({
     },
   },
   css: ["@mdi/font/css/materialdesignicons.css", 'vuetify/styles', '~/assets/styles/main.scss'],
+  app: {
+    head: {
+      script: [
+        {
+          type: "module",
+          src: "https://unpkg.com/@splinetool/viewer@1.12.42/build/spline-viewer.js",
+        },
+      ],
+    },
+  },
 })

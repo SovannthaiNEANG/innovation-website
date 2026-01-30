@@ -1,12 +1,10 @@
 <template>
-  <h1 class="hero-title text-xxl text-white">
+  <p class="hero-title text-xxl text-white">
     {{ title }}
-  </h1>
-
+  </p>
   <p class="hero-desc text-md text-white">
     {{ description }}
   </p>
-
   <v-btn rounded class="text-none text-md" size="large" color="white" variant="flat">
     {{ btnText }}
   </v-btn>

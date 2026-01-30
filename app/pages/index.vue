@@ -4,12 +4,11 @@
   <!-- Scrollable Content -->
   <div class="snap-container">
     <div class="hero snap-section">
+      <spline-viewer url="https://prod.spline.design/HGZfaeE3fBgGwB2f/scene.splinecode" class="set-background"></spline-viewer>
       <ContainerWrapper>
         <v-row align="center">
-          <!-- LEFT CONTENT -->
           <v-col cols="12" md="6">
             <MainTitle title="Innovation at Every Layer." description="Innovation should be existed in every part of the business to make it grow effectively and efficiently." btnText="View Our Projects"></MainTitle>
-            <!-- STATS -->
             <v-row class="mt-10">
               <v-col cols="4">
                 <p class="text-xxl">10</p>
@@ -26,13 +25,12 @@
             </v-row>
           </v-col>
 
-          <!-- RIGHT CIRCLES -->
-        <v-col cols="12" md="6" class="circle-wrapper">
-          <div class="circle ring-1"></div>
-          <div class="circle ring-2"></div>
-          <div class="circle ring-3"></div>
-          <div class="circle ring-4"></div>
-        </v-col>
+          <v-col cols="12" md="6">
+            <!-- <div class="circle ring-1"></div>
+            <div class="circle ring-2"></div>
+            <div class="circle ring-3"></div>
+            <div class="circle ring-4"></div> -->
+          </v-col>
         </v-row>
       </ContainerWrapper>
     </div>
@@ -53,10 +51,16 @@
     </div> -->
   </div>
 </template>
-<script setup lang="ts">
-
-</script>
 <style scoped>
+.set-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: transparent;
+}
 /* Fixed Background Layer */
 .fixed-background {
   position: fixed;
@@ -121,6 +125,7 @@
 
 /* CIRCLES */
 .circle-wrapper {
+  background: transparent;
   position: relative;
   height: 100vh;
   /* overflow: hidden; */
