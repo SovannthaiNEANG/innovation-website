@@ -5,7 +5,7 @@
   <div class="snap-container">
     <div class="hero snap-section">
       <spline-viewer url="https://prod.spline.design/HGZfaeE3fBgGwB2f/scene.splinecode" class="set-background"></spline-viewer>
-      <ContainerWrapper>
+      <ContainerWrapper class="content-wrapper">
         <v-row align="center">
           <v-col cols="12" md="6">
             <MainTitle title="Innovation at Every Layer." description="Innovation should be existed in every part of the business to make it grow effectively and efficiently." btnText="View Our Projects"></MainTitle>
@@ -58,8 +58,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
   background-color: transparent;
+  pointer-events: auto;
 }
 /* Fixed Background Layer */
 .fixed-background {
@@ -78,7 +79,7 @@
 /* Scrollable Container */
 .snap-container {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -95,6 +96,17 @@
   color: white;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.content-wrapper * {
+  pointer-events: auto;
 }
 
 .content-section {
